@@ -38,4 +38,5 @@ submitButton.addEventListener('click', () => {
     users.push(user);
     localStorage.setItem('users', JSON.stringify(users));
     showAlert('Sign up successful');
+    window.location.href = '../login/';
 });
