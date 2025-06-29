@@ -23,18 +23,49 @@
             </nav>
         </div>
         <div class="box-logout">
-            <button class="btn-logout">Đăng xuất</button>
+            <button class="btn-logout" id="btnLogout">Đăng xuất</button>
         </div>
     </div>
     <div class="container">
         <div class="header">
             <div class="box-user">
-                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="" class="avatar">
-                <p>Nguyễn Văn A</p>
+                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="" class="avatar" id="avatar">
+                <p id="fullName">Nguyễn Văn A</p>
             </div>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <div class="box-title">
+                <h1 class="title">Quản lý người dùng</h1>
+                <button type="button">
+                    Thêm người dùng
+                </button>
+            </div>
+            <div class="box-search">
+                <input type="text" placeholder="Tìm kiếm người dùng">
+                <button>Tìm kiếm</button>
+            </div>
+            <div class="table-container">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ và tên</th>
+                            <th>Email</th>
+                            <th>Số điện thoại</th>
+                            <th>Vai trò</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </body>
+<script src="./script.js"></script>
+<script src="../common/script.js"></script>
+<script src="../../common/script.js"></script>
 
 </html>

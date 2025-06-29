@@ -11,7 +11,8 @@
 <body>
     <div class="sidebar">
         <div class="box-nav">
-            <img src="https://chess-master-fe.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ec055b4a.png&w=640&q=75" alt="" class="logo">
+            <img src="https://chess-master-fe.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ec055b4a.png&w=640&q=75"
+                alt="" class="logo">
             <nav>
                 <ul>
                     <li class="nav-active"><a href="./">Bảng điều khiên</a></li>
@@ -20,17 +21,19 @@
             </nav>
         </div>
         <div class="box-logout">
-            <button class="btn-logout">Đăng xuất</button>
+            <button class="btn-logout" id="btnLogout">Đăng xuất</button>
         </div>
     </div>
     <div class="container">
         <div class="header">
             <div class="box-user">
-                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="" class="avatar">
-                <p>Nguyễn Văn A</p>
+                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="" class="avatar" id="avatar">
+                <p id="fullName">Nguyễn Văn A</p>
             </div>
         </div>
         <div class="content"></div>
     </div>
 </body>
+<script src="./common/script.js"></script>
+<script src="../common/script.js"></script>
 </html>

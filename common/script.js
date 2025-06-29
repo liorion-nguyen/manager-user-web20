@@ -25,3 +25,9 @@ export const showAlert = (message) => {
         }
     }, 3000);
 }
+
+const user = JSON.parse(localStorage.getItem('userActive'));
+const pathname = window.location.pathname;
+if (user && (pathname == '/login/' || pathname == '/signup/')) {
+    window.location.href = 'http://127.0.0.1:5500/dashboard/';
+}
