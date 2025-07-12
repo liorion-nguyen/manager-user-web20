@@ -3,7 +3,7 @@ import { showAlert } from '../common/script.js';
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const submitButton = document.getElementById('submitButton');
-
+  
 submitButton.addEventListener('click', () => {
     const users = JSON.parse(localStorage.getItem('users')) || [];
     if (email.value.length < 5 || !email.value.includes('@')) {
